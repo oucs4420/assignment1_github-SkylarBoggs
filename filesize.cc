@@ -23,11 +23,10 @@ int main( int argc, char* argv[] )
             cout << " " << argv[i] << ": -1" << endl;
         }
         else{
-            while(!file.eof()){
+            while(file.peek() != EOF){ //Resolves issue w/eof running one more time for some files 
                 getline(file, line);
                 ++lines; //adds a line 
             }
-            lines--; //gets rid of extra line from eof 
             cout << " " << argv[i] << ": " << lines << endl; //correct spacing and print to user 
         file.close();
         lines = 0; //reset for next file 
