@@ -1,10 +1,14 @@
+//  Author: Skylar Boggs
+//  Program: Assignment 1 OS
+//  Professor: Dr. S Ostermann
+//  Date: 13 January 2022
+
 #include <iostream>
 #include <fstream>
 using namespace std;
 
 // output format to use IDENTICALLY:
 //BSH:Saru> ./filesize input.3lines input.1line 
-//program: ./filesize
 // input.3lines: 3
 // input.1line: 1
 
